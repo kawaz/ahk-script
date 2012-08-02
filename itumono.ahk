@@ -7,8 +7,8 @@
 ; AutoHotkey スレッド part13
 ; http://anago.2ch.net/test/read.cgi/software/1317156599/
 
-#include _global_IME.ahk
-#include _global_common.ahk
-#include _global_misc.ahk
-#include _app_Notepad++.ahk
-#include _app_Hidemaru32Class.ahk
+#include global/functions.ahk
+#include global/IME.ahk
+#include global/misc.ahk
+#include app/Notepad++.ahk
+#include app/Hidemaru.ahk
