@@ -1,11 +1,11 @@
-;クラスとタイトルを取得するショートカット
+;Ctr+@ でアプリのクラスとタイトルを取得する
 $^@::
-	Send, ^@
-	WinGetTitle title, A
-	WinGetClass cls, A
-	tooltip % "class=" cls ", title=" title
-	sleep 3000
-	tooltip
+  Send, ^@
+  WinGetTitle title, A
+  WinGetClass cls, A
+  tooltip % "class=" cls ", title=" title
+  sleep 3000
+  tooltip
 return
 
 ;Win+Q でアプリ終了(F4が遠いから)
