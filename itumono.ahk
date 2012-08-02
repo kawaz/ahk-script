@@ -8,7 +8,6 @@
 ; http://anago.2ch.net/test/read.cgi/software/1317156599/
 
 #include global/functions.ahk
-#include global/IME.ahk
 #include global/misc.ahk
 #include app/Notepad++.ahk
 #include app/Hidemaru.ahk
