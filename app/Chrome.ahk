@@ -12,4 +12,20 @@ $^g::SendWithImeOff("^g")
 ; 検索時(Vichrome)はデフォルトでIMEオフにする
 $/::SendWithImeOff("/")
 
+; マウスホイールでタブ切り替え(←)
+~WheelUp::
+  MouseGetPos, x, y
+  if(y < 80) {
+    send, ^{PgUp}
+  }
+return
+; マウスホイールでタブ切り替え(→)
+~WheelDown::
+  MouseGetPos, x, y
+  if(y < 80) {
+    send, ^{PgDn}
+  }
+return
+
+
 #ifWinActive
