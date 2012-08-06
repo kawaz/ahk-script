@@ -11,3 +11,4 @@
 #include global/misc.ahk
 #include app/Notepad++.ahk
 #include app/Hidemaru.ahk
+#include app/Chrome.ahk
