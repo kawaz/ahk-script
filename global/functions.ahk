@@ -11,6 +11,20 @@ SendIfTitleMatch(titleRegExp, matchKey, notMatchKey) {
   }
 }
 
+; keyを送信した後IMEをオフにする
+; @param key 送信するキー
+SendWithImeOff(key) {
+  IME_OFF()
+  Send, %key%
+}
+
+; IMEをオフにした後keyを送信する
+; @param key 送信するキー
+SendAfterImeOff(key) {
+  Send, %key%
+  IME_OFF()
+}
+
 ; IMEの状態をセット
 ; @param SetSts 1:ON, 0:OFF
 ; @param WinTitle="A" 対象Window

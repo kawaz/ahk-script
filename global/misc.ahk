@@ -16,10 +16,7 @@ vkF4sc029::IME_OFF()
 vkF3sc029::IME_OFF()
 
 ;EscでIMEオフしつつESC(vimが快適になる)
-$Esc::
-  IME_OFF()
-  Send, {Esc}
-return
+$Esc::SendAfterImeOff("{Esc}")
 
 ;Shift+F1 でシングルクオート入力(ダブルクオートと同じ感覚でシングルクオート打ちたいのに遠いから)
 +F1::'
